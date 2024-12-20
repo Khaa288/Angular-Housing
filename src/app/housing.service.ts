@@ -6,7 +6,7 @@ import { HousingLocation } from './housinglocation';
 })
 
 export class HousingService {
-  readonly url = 'http://localhost:3000/locations';
+  readonly url = 'https://angular-housing-db.onrender.com/locations';
 
   async getAllHousingLocations(): Promise<HousingLocation[]> {
     const data = await fetch(this.url);
