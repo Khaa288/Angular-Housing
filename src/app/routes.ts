@@ -4,7 +4,7 @@ import {DetailsComponent} from './details/details.component';
 
 const routeConfig: Routes = [
     {
-        path: 'home',
+        path: '',
         component: HomeComponent,
         title: 'Home Page',
     },
@@ -16,14 +16,8 @@ const routeConfig: Routes = [
     },
 
     {
-        path: '',
-        redirectTo: 'home',
-        pathMatch: 'full'
-    },
-
-    {
         path: '**',
-        redirectTo: 'home',
+        redirectTo: '',
         pathMatch: 'full'
     },
 ];
