@@ -4,7 +4,7 @@ import {DetailsComponent} from './details/details.component';
 
 const routeConfig: Routes = [
     {
-        path: '',
+        path: 'home',
         component: HomeComponent,
         title: 'Home Page',
     },
@@ -13,6 +13,18 @@ const routeConfig: Routes = [
         path: 'details/:id',
         component: DetailsComponent,
         title: 'Home details',
+    },
+
+    {
+        path: '',
+        redirectTo: 'home',
+        pathMatch: 'full'
+    },
+
+    {
+        path: '**',
+        redirectTo: 'home',
+        pathMatch: 'full'
     },
 ];
 
